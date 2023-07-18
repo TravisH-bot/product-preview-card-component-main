@@ -1,0 +1,173 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:wght@700&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+  background-color: #f3eae3;
+  margin: 0;
+}
+
+.main-container {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  display: flex;
+  border-radius: 0.6em;
+  height: 25em;
+  width: 35em;
+  background-color: #ffffff;
+}
+
+.info {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 1em;
+  overflow: hidden;
+}
+
+.perfume {
+  border-radius: 0.6em 0 0 0.6em;
+  width: 60.59em;
+  height: 25em;
+  background: url("./images/image-product-desktop.jpg");
+  background-size: cover;
+}
+
+.prod-title {
+  width: 15em;
+}
+
+.prices {
+  font-family: "Fraunces", serif;
+  display: flex;
+  margin-right: 2em;
+}
+
+.add-to-cart {
+  background-color: #3d8168;
+  border: none;
+  border-radius: 0.6em;
+  width: 18em;
+  height: 4em;
+  color: white;
+  font-weight: bold;
+}
+
+.add-to-cart:hover {
+  cursor: pointer;
+  background-color: #22493b;
+}
+
+h1 {
+  font-family: "Fraunces", serif;
+  font-size: 2.2em;
+  margin: 0.3em 0.2em;
+  line-height: 0.9;
+}
+
+h2 {
+  font-size: 2.2em;
+  color: #3d8168;
+  margin: 0.6em 0.1em;
+}
+
+h3 {
+  color: #7b7e87;
+  text-transform: uppercase;
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.9em;
+  letter-spacing: 0.3em;
+  margin: 0.2em 0 0.1em 0.3em;
+}
+
+h5 {
+  display: flex;
+  align-items: center;
+  color: #7b7e87;
+  text-decoration: line-through;
+  margin-left: 2em;
+}
+
+p {
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.9em;
+  color: #7b7e87;
+  margin: 0.3em 0.5em;
+  line-height: 1.4;
+}
+
+.fa {
+  margin-right: 0.7em;
+}
+
+.attribution {
+  padding-top: 8em;
+}
+
+@media screen and (max-width: 400px) {
+  body {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .main-container {
+    height: 50em;
+    width: auto;
+  }
+
+  .card {
+    flex-direction: column;
+    height: 42em;
+    width: 22em;
+  }
+
+  .prod-title {
+    width: 19.5em;
+  }
+
+  .perfume {
+    border-radius: 0.6em 0.6em 0 0;
+    background: url("./images/image-product-mobile.jpg");
+    width: 22em;
+    height: 20em;
+    background-size: cover;
+    background-position: center;
+  }
+
+  h1 {
+    font-size: 1.8em;
+  }
+
+  p {
+    margin: 0.3em 0.7em;
+    line-height: 1.4;
+  }
+
+  .prices {
+    margin-right: 5em;
+  }
+
+  .add-to-cart {
+    width: 22em;
+  }
+
+  .attribution {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    font-size: 0.9em;
+    padding-top: 5em;
+  }
+}
